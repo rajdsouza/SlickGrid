@@ -516,6 +516,10 @@ if (typeof Slick === "undefined") {
       return $headerRow[0];
     }
 
+    function getHeaderColumnWidthDiff(){
+        return headerColumnWidthDiff;
+    }
+
     function getHeaderRowColumn(columnId) {
       var idx = getColumnIndex(columnId);
       var $header = $headerRow.children().eq(idx);
@@ -3401,7 +3405,9 @@ if (typeof Slick === "undefined") {
       "setTopPanelVisibility": setTopPanelVisibility,
       "setHeaderRowVisibility": setHeaderRowVisibility,
       "getHeaderRow": getHeaderRow,
+      "getHeaderColumnWidthDiff": getHeaderColumnWidthDiff,
       "getHeaderRowColumn": getHeaderRowColumn,
+      "getHeadersWidth":getHeadersWidth,
       "getGridPosition": getGridPosition,
       "flashCell": flashCell,
       "addCellCssStyles": addCellCssStyles,
